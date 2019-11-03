@@ -48,7 +48,8 @@ Pyenv install 3.8.0
 pyenv global 3.8.0
 
 echo 'Installing other command-line packages'
-brew install wget git node postgresql r jupyter jupyterlab
+brew install wget git node postgresql r jupyter
+pip3 install jupyterlab
 
 ## Apps outside of the AppStore
 echo 'Installing full-packaged apps.'
