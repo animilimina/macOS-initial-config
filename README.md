@@ -17,7 +17,7 @@ The scripts make ues of [Homebrew](http://brew.sh "Homebrew — The missing pack
 
 To run the main script as is:
 ```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/animilimina/macOS-initial-config/master/post-install.sh)"
 ```
 
 Otherwise, download the scripts you want to use and edit them. Once ready, open Terminal type "sh ", drag-n-drop the file you want to run on the Terminal window. Your command line should look like this:
