@@ -65,6 +65,7 @@ brew cask install dbeaver-community
 brew cask install onyx
 brew cask install firefox
 brew cask install google-chrome
+brew cask install opera
 brew cask install alfred
 brew cask install bartender
 brew cask install scroll-reverser
@@ -80,27 +81,33 @@ brew cask install sia-ui
 brew cask install vlc
 brew cask install hazel
 brew cask install hyperdock
+brew cask install dropbox
 
 ## Apps from the AppStore
-mas install 1333542190 918858936 1078184147 1290358394 975937182 682658836 1081413713 668208984 408981434 409183694 1116599239 409203825 409201541 407963104 1449412482 425424353 904280696 1147396723
-# 1333542190 - 1Password 7
-# 918858936 - Airmail 3
-# 1078184147 - Capto
-# 1290358394 - Cardhop
-# 975937182 - Fantastical 2
-# 682658836 - GarageBand
-# 1081413713 - GIF Brewery
-# 668208984 - GIPHY CAPTURE
-# 408981434 - iMovie
-# 409183694 - Keynote
-# 1116599239 - NordVPN IKE
-# 409203825 - Numbers
-# 409201541 - Pages
-# 407963104  - Pixelmator
-# 1449412482 - Reeder 4
-# 425424353 - The Unarchiver
-# 904280696 - Things 3
-# 1147396723 - WhatsApp Desktop
+mas install 1333542190 # 1Password 7
+mas install 918858936 # Airmail 3
+mas install 1078184147 # Capto
+mas install 1290358394 # Cardhop
+mas install 975937182 # Fantastical 2
+mas install 682658836 # GarageBand
+mas install 1081413713 # GIF Brewery
+mas install 668208984 # GIPHY CAPTURE
+mas install 408981434 # iMovie
+mas install 409183694 # Keynote
+mas install 462058435 # Microsoft Excel
+mas install 823766827 # Microsoft OneDrive
+mas install 784801555 # Microsoft OneNote
+mas install 985367838 # Microsoft Outlook
+mas install 462062816 # Microsoft PowerPoint
+mas install 462054704 # Microsoft Word
+mas install 1116599239 # NordVPN IKE
+mas install 409203825 # Numbers
+mas install 409201541 # Pages
+mas install 407963104 # Pixelmator
+mas install 1449412482 # Reeder 4
+mas install 425424353 # The Unarchiver
+mas install 904280696 # Things 3
+mas install 1147396723 # WhatsApp Desktop
 
 
 
