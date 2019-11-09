@@ -6,9 +6,6 @@
 # It has been created and tested on macOS 10.15.
 
 ### SETTINGS
-## Variables
-DSS_VERSION='6.0.1'
-
 ## Disabling GateKeeper
 sudo spctl --master-disable
 
@@ -75,11 +72,14 @@ brew install neo4j
 # Dataiku DSS
 mkdir -p ./Develop/Dataiku
 cd ./Develop/Dataiku
+wget https://raw.githubusercontent.com/animilimina/macOS-initial-config/wip/dss_version.py
+DSS_VERSION=$(python3 dss_version.py)
+rm dss_version.py
 wget "https://cdn.downloads.dataiku.com/public/dss/$DSS_VERSION/dataiku-dss-$DSS_VERSION-osx.tar.gz"
 tar xzf "dataiku-dss-$DSS_VERSION-osx.tar.gz"
+rm "dataiku-dss-$DSS_VERSION-osx.tar.gz"
 "dataiku-dss-$DSS_VERSION-osx/installer.sh" -d Design -p 11000
 ./Design/bin/dssadmin install-R-integration
-rm "dataiku-dss-$DSS_VERSION-osx.tar.gz"
 cd ~
 
 ## Apps outside of the AppStore
