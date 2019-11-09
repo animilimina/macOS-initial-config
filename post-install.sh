@@ -5,6 +5,14 @@
 # This script is a personal rewrite of this one: https://github.com/nicolinuxfr/macOS-post-installation/blob/master/post-install.sh
 # It has been created and tested on macOS 10.15.
 
+### SETTINGS
+## Variables
+DSS_VERSION='6.0.1'
+
+## Disabling GateKeeper
+sudo spctl --master-disable
+
+
 ### Install utilities
 ## Homebrew - Package management
 
@@ -33,7 +41,9 @@ brew install mas
 brew tap caskroom/cask
 
 ## Optional dependancies (safer to install them)
-brew cask install java xquartz
+brew tap homebrew/cask-versions
+brew cask install java11 xquartz
+
 
 ### Installing software
 
@@ -48,8 +58,29 @@ Pyenv install 3.8.0
 pyenv global 3.8.0
 
 echo 'Installing other command-line packages'
-brew install wget git node postgresql r jupyter
+brew install wget git node r jupyter
 pip3 install jupyterlab
+
+# postgreSQL
+brew install postgresql
+ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+createuser -s postgres
+# Run this only if you want to use psql as yourself (not recommended)
+# createdb "$(id -un)"
+
+# neo4j
+brew cask install homebrew/cask-versions/adoptopenjdk8
+brew install neo4j
+
+# Dataiku DSS
+mkdir -p ./Develop/Dataiku
+cd ./Develop/Dataiku
+wget "https://cdn.downloads.dataiku.com/public/dss/$DSS_VERSION/dataiku-dss-$DSS_VERSION-osx.tar.gz"
+tar xzf "dataiku-dss-$DSS_VERSION-osx.tar.gz"
+"dataiku-dss-$DSS_VERSION-osx/installer.sh" -d Design -p 11000
+./Design/bin/dssadmin install-R-integration
+rm "dataiku-dss-$DSS_VERSION-osx.tar.gz"
+cd ~
 
 ## Apps outside of the AppStore
 echo 'Installing full-packaged apps.'
@@ -59,6 +90,7 @@ brew cask install sublime-text
 brew cask install rstudio
 brew cask install pycharm-ce
 brew cask install sourcetree
+brew cask install tableau
 brew cask install postman
 brew cask install docker
 brew cask install dbeaver-community
@@ -145,9 +177,7 @@ defaults write com.apple.dock springboard-rows -int 8
 # Be able to select text in quick view
 defaults write com.apple.finder QLEnableTextSelection -bool true
 
-
-
-# Restart Dock
+## Restart Dock
 killall Dock
 
 
