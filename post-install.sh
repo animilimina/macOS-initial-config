@@ -156,13 +156,11 @@ defaults write com.apple.dock showhidden -bool TRUE
 # Auto-hide
 defaults write com.apple.dock autohide -bool TRUE
 # Size
-defaults write com.apple.dock tilesize -int 20
+defaults write com.apple.dock tilesize -int 25
 # Activate magnification
 defaults write com.apple.dock magnification -bool true
 # Magnification size
-defaults write com.apple.dock largesize -float 70
-# Dock on the left
-defaults write com.apple.Dock orientation -string left 
+defaults write com.apple.dock largesize -float 90
 # Minimize to application
 defaults write com.apple.dock minimize-to-application -bool TRUE
 # Minimize scale animation
