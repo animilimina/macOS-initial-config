@@ -61,7 +61,9 @@ pip3 install jupyterlab
 # postgreSQL
 brew install postgresql
 ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+launchctl load /usr/local/Cellar/postgresql/11.5_1/homebrew.mxcl.postgresql.plist
 createuser -s postgres
+launchctl unload /usr/local/Cellar/postgresql/11.5_1/homebrew.mxcl.postgresql.plist
 # Run this only if you want to use psql as yourself (not recommended)
 # createdb "$(id -un)"
 
@@ -106,20 +108,20 @@ brew cask install calibre
 brew cask install spamsieve
 brew cask install keybase
 brew cask install transmission
-brew cask install transmit
-brew cask install cyberduck
 brew cask install ledger-live
 brew cask install sia-ui
 brew cask install vlc
 brew cask install hazel
 brew cask install hyperdock
 brew cask install dropbox
+brew cask install microsoft-teams
 
 ## Apps from the AppStore
 mas install 1333542190 # 1Password 7
 mas install 918858936 # Airmail 3
 mas install 1078184147 # Capto
 mas install 1290358394 # Cardhop
+mas install 409222199 # Cyberduck
 mas install 975937182 # Fantastical 2
 mas install 682658836 # GarageBand
 mas install 1081413713 # GIF Brewery
