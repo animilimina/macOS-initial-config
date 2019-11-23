@@ -118,7 +118,6 @@ brew cask install microsoft-teams
 
 ## Apps from the AppStore
 mas install 1333542190 # 1Password 7
-mas install 918858936 # Airmail 3
 mas install 1078184147 # Capto
 mas install 1290358394 # Cardhop
 mas install 409222199 # Cyberduck
@@ -139,6 +138,7 @@ mas install 409203825 # Numbers
 mas install 409201541 # Pages
 mas install 407963104 # Pixelmator
 mas install 1449412482 # Reeder 4
+mas install 1176895641 # Spark
 mas install 425424353 # The Unarchiver
 mas install 904280696 # Things 3
 mas install 1147396723 # WhatsApp Desktop
