@@ -48,8 +48,6 @@ brew cask install java11 xquartz
 # Python
 echo 'Installin Python'
 brew install pyenv
-pyenv install 2.7.16
-pyenv install 3.6.9
 pyenv install 3.7.4
 Pyenv install 3.8.0
 pyenv global 3.8.0
@@ -97,15 +95,11 @@ brew cask install postman
 brew cask install docker
 brew cask install dbeaver-community
 brew cask install onyx
-brew cask install firefox
 brew cask install google-chrome
-brew cask install opera
 brew cask install alfred
 brew cask install bartender
 brew cask install scroll-reverser
-brew cask install pock
 brew cask install calibre
-brew cask install spamsieve
 brew cask install keybase
 brew cask install transmission
 brew cask install ledger-live
@@ -115,16 +109,18 @@ brew cask install hazel
 brew cask install hyperdock
 brew cask install dropbox
 brew cask install microsoft-teams
+brew cask install bettertouchtool
 
 ## Apps from the AppStore
 mas install 1333542190 # 1Password 7
+mas install 1121192229 # Better blocker
 mas install 1078184147 # Capto
 mas install 1290358394 # Cardhop
 mas install 409222199 # Cyberduck
 mas install 975937182 # Fantastical 2
 mas install 682658836 # GarageBand
-mas install 1081413713 # GIF Brewery
 mas install 668208984 # GIPHY CAPTURE
+mas install 430798174 # HazeOver
 mas install 408981434 # iMovie
 mas install 409183694 # Keynote
 mas install 462058435 # Microsoft Excel
@@ -180,6 +176,8 @@ defaults write com.apple.finder QLEnableTextSelection -bool true
 ## Restart Dock
 killall Dock
 
+# Iconic Mac boot sound
+sudo nvram StartupMute=%00
 
 
 ## Cherry on the top
