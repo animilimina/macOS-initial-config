@@ -49,8 +49,8 @@ brew cask install java11 xquartz
 echo 'Installin Python'
 brew install pyenv
 pyenv install 3.7.4
-Pyenv install 3.8.0
-pyenv global 3.8.0
+Pyenv install 3.8.5
+pyenv global 3.8.5
 
 echo 'Installing other command-line packages'
 brew install wget git node r jupyter
@@ -94,6 +94,7 @@ brew cask install tableau
 brew cask install postman
 brew cask install docker
 brew cask install dbeaver-community
+brew cask install handbrake
 brew cask install onyx
 brew cask install google-chrome
 brew cask install alfred
@@ -134,7 +135,7 @@ mas install 409203825 # Numbers
 mas install 409201541 # Pages
 mas install 407963104 # Pixelmator
 mas install 1449412482 # Reeder 4
-mas install 1176895641 # Spark
+# mas install 1176895641 # Spark
 mas install 425424353 # The Unarchiver
 mas install 904280696 # Things 3
 mas install 1147396723 # WhatsApp Desktop
