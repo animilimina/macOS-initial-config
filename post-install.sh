@@ -84,7 +84,6 @@ cd ~
 
 ## Apps outside of the AppStore
 echo 'Installing full-packaged apps.'
-brew cask install atom
 brew cask install visual-studio-code
 brew cask install sublime-text
 brew cask install rstudio
@@ -96,12 +95,10 @@ brew cask install docker
 brew cask install dbeaver-community
 brew cask install handbrake
 brew cask install onyx
-brew cask install google-chrome
 brew cask install alfred
 brew cask install bartender
 brew cask install scroll-reverser
 brew cask install calibre
-brew cask install keybase
 brew cask install transmission
 brew cask install ledger-live
 brew cask install sia-ui
@@ -109,33 +106,22 @@ brew cask install vlc
 brew cask install hazel
 brew cask install hyperdock
 brew cask install dropbox
-brew cask install microsoft-teams
 brew cask install bettertouchtool
 
 ## Apps from the AppStore
 mas install 1333542190 # 1Password 7
+mas install 918858936 # Airmail
 mas install 1121192229 # Better blocker
 mas install 1078184147 # Capto
 mas install 1290358394 # Cardhop
 mas install 409222199 # Cyberduck
 mas install 975937182 # Fantastical 2
-mas install 682658836 # GarageBand
 mas install 668208984 # GIPHY CAPTURE
 mas install 430798174 # HazeOver
 mas install 408981434 # iMovie
-mas install 409183694 # Keynote
-mas install 462058435 # Microsoft Excel
-mas install 823766827 # Microsoft OneDrive
-mas install 784801555 # Microsoft OneNote
-mas install 985367838 # Microsoft Outlook
-mas install 462062816 # Microsoft PowerPoint
-mas install 462054704 # Microsoft Word
 mas install 1116599239 # NordVPN IKE
-mas install 409203825 # Numbers
-mas install 409201541 # Pages
 mas install 407963104 # Pixelmator
 mas install 1449412482 # Reeder 4
-# mas install 1176895641 # Spark
 mas install 425424353 # The Unarchiver
 mas install 904280696 # Things 3
 mas install 1147396723 # WhatsApp Desktop
