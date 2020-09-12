@@ -48,7 +48,6 @@ brew cask install java11 xquartz
 # Python
 echo 'Installin Python'
 brew install pyenv
-pyenv install 3.7.4
 Pyenv install 3.8.5
 pyenv global 3.8.5
 
